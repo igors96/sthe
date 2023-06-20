@@ -8,8 +8,8 @@ from htbuilder.units import rem
 # Creating an instance of XGBoost Regressor and fitting the model to the training data
 
 # load saved model
-with open('xgb_regressor_model.pkl' , 'rb') as f:
-   xgb_r = pickle.load(f)
+xgb_r = xg.XGBRegressor()
+xgb_r.load_model("model_xgb_r.model")
 
 # Getting heat exchanger data
 
