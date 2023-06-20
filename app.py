@@ -19,8 +19,8 @@ def get_heat_exchanger_data():
     temp_hot = st.sidebar.slider('Temperature of hot fluid (ºC)', 40, 80, 40, 1)
     temp_cold = st.sidebar.slider('Temperature of cold fluid (ºC)', 5, 30, 5, 1)
     shell_passes = st.sidebar.slider('Shell passes', 1, 2, 1, 1)
-    fouling_factor_tube = st.sidebar.slider('Fouling factor *10\u207B\u2074(tube, W/m2*K)', 0.9, 2.0, 1.5, 0.1)
-    fouling_factor_shell = st.sidebar.slider('Fouling factor *10\u207B\u2074(shell, W/m2*K)', 0.9, 2.0, 1.5, 0.1)
+    fouling_factor_tube = st.sidebar.slider('Fouling factor * 10\u207B\u2074(tube, W/m2*K)', 0.9, 2.0, 1.5, 0.1)
+    fouling_factor_shell = st.sidebar.slider('Fouling factor * 10\u207B\u2074(shell, W/m2*K)', 0.9, 2.0, 1.5, 0.1)
 
 
     heat_exchanger_data = {'Flow_hot (kg/s)' : flow_hot,
